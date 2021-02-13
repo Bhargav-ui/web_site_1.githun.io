@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background:orangered;
+        }
+        #table1{
+            width: 100%;
+            height: 70px;
+            background:linear-gradient(to right,red,yellow);
+            /* border:1px solid red; */
+            /* position: fixed; */
+        }
+
+        
+        #logo1{
+            width: 80px;
+            float: right;
+        }
+        /* #logo2{
+            width: 40px;
+            height: 19px;
+            /* border:1px solid red; */
+            /* margin-bottom: -3px; */
+        /* } */ 
+        #search{
+            /* background: red; */
+            border: 1px solid red;
+            
+        }
+        input[type="text"]{
+            /* border:none; */
+            /* width: 400px; */
+            width:60%;
+            height: 30px;
+            margin-left: 50px;
+            border-radius: 5px;
+            border:none;
+        }
+
+        #login{
+           
+            background: wheat;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        #table2{
+            /* position:static; */
+            width: 100%;
+            height: 50px;
+            background:black;
+            color: blanchedalmond;
+            /* margin:0px 70px;  */
+        }
+        #table2 tr td{
+            width: 20%;
+            text-align: center;
+        }
+
+        #img1{
+            width: 100%;
+            height: 300px;
+        }
+
+        #table3,#table5{
+            background: white;
+            box-shadow: 5px 5px 9px black;            /* border: 1px solid red; */
+            
+        }
+
+        
+        /* #table3,img{
+            width: 100%;
+        } */
+
+       #table3, #i1,#i2,#i3{
+            width: 100%;
+
+        }
+
+        
+
+        #i1:hover,#i2:hover,#i3:hover,#i4:hover,#i5:hover{
+            width:90%;
+        }
+
+        /* menu */
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content
+        {
+            display:none;
+            position: absolute;
+            /* background-color: #f9f9f9; */
+            min-width: 169px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index:1;    
+        }
+        .dropdown-content p {
+        border:1px solid black;
+        border-radius: 5px;
+        background:linear-gradient(to right,red,yellow);
+        
+        }
+
+        /* .dropdown-content p:hover{
+            width:175px
+        } */
+
+        /* #p1:hover,#p2:hover,#p3:hover,#p4:hover,#p5:hover{
+            width:175px;
+        } */
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+            
+        }
+        .dropdown-content p a{
+            text-decoration: none;
+        }
+
+        .dropdown-content p a:hover{
+            font-size: 30px;
+        }
+
+        .dropdown-content p a.active{
+            color: yellow;
+            font-size: 25px;    
+        }
+
+        #table4{
+            width: 90%;
+            margin: 0 auto;
+            
+        }
+        #table4 tr td{
+            width: 25%;
+            /* color:white; */
+        }
+
+        #tr1{
+            color:slategrey;
+            background: wheat;
+            
+        }
+
+        #tr2,#tr3,#tr4,#tr5 {
+            color:white;
+            /* background: darkorange; */
+        }
+
+        footer{
+            background:linear-gradient(to right,red,yellow);
+            text-align: center;
+        }
+
+        marquee{
+            margin: 5px;
+            padding: 20px;
+            font-size: 20px;
+        }
+        #more{
+            text-decoration: none;
+            /* border:1px solid red; */
+            padding:10px 20px;
+            border-radius: 10px;
+            background:turquoise
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="webpage">
+        <table id="table1">
+            <tr>
+                <td><img src="images/logo1.png" id="logo1"></td>
+                <td id="td"><class id="search"><input type="text" placeholder="Search for products,brands and more"></class> </td>
+                <td><a href="form_10.html" id="login" target="_blank">Login</a></td>
+                <td><a  id="more" href="more.html">More</a></td>
+                <td style="width: 70px;"></td>
+            </tr>
+        </table>
+
+        <table id="table2" >
+            <tr>
+                
+                <td>
+                    <div class="dropdown">
+                    <span>Mobiles</span>
+                    <div class="dropdown-content">
+                        <p><a class="active" href="samsung.html" id="p1">samsung</a> </p>
+                        <p><a  href="nokia.html" id="p2">nokia</a> </p>
+                        <p><a href="#" id="p3">apple</a> </p>
+                        <p><a href="#" id="p4">htc</a> </p>
+                        <p><a href="#" id="p5">black berry</a></p>
+                       </div>
+                    </div>
+                </td>
+
+
+                <td>
+                <div class="dropdown">
+                    <span>Electornics</span>
+                    <div class="dropdown-content">
+                        <p>mobiles </p>
+                        <p>earphones</p>
+                        <p>tv</p>
+                        <p>ac</p>
+                        <p>frize</p>
+                        </div>
+                </div></td>
+
+
+                <td>
+                    <div class="dropdown">
+                        <span>jewelry</span>
+                        <div class="dropdown-content">
+                            <p> <a href="Rings.html"> Rings and Bling</a> </p>
+                            <p><a href="gold.html">gold</a> </p>
+                            <p><a href="#"></a>Special Stones</a></p>
+                            <p><a href="#"></a>Cool Jewels</a></p>
+                            </div>
+                    </div></td>
+
+                    <td>
+                        <div class="dropdown">
+                            <span>men</span>
+                            <div class="dropdown-content">
+                                <p><a href="mens_shirts.html">Shirt</a> </p>
+                                <p><a href="#">Sweater</a></p>
+                                <p><a href="#">Jeans</a></p>
+                                <p><a href="#">Gloves</a></p>
+                                <p><a href="#">Singlet</a></p>
+                                </div>
+                        </div></td>
+
+                        <td>
+                            <div class="dropdown">
+                                <span>woman</span>
+                                <div class="dropdown-content">
+                                    <p><a href="woman_dress.html">Aline dress</a></p>
+                                    <p>Tent dress</p>
+                                    <p>Yoke dress</p>
+                                    <p>Shift dress</p>
+                                    <p>Formal </p>
+                                    </div>
+                            </div></td>
+            </tr>
+        </table>
+<br>
+<table id="table3" >
+    <tr>
+        <td><img src="images/sam1.jpg" id="i1"></td>
+        <td><img src="images/sam2.jpg" id="i2"></td>
+        <td><img src="images/sam3.jpg" id="i3"></td>
+        <td><img src="images/sam1.jpg" id="i3"></td>
+
+        <td><img src="images/sam2.jpg" id="i3"></td>
+
+        <td><img src="images/sam3.jpg" id="i3"></td>
+
+        <td><img src="images/sam1.jpg" id="i3"></td>
+
+        <td><img src="images/sam2.jpg" id="i3"></td>
+
+
+        </tr>
+
+</table>
+
+
+<br>
+        <table id="table4" >
+            <tr id="tr1">
+                <td>ABOUT</td>
+                <td>HELP</td>
+                <td>POLICY</td>
+                <td>SOCIAL</td>
+            </tr>
+            <tr id="tr2">
+                <td>Contact Us</td>
+                <td>Payments</td>
+                <td>Return Policy</td>
+                <td>Facebook</td>
+            </tr>
+            <tr id="tr3">
+                <td>About Us</td>
+                <td>Shipping</td>
+                <td>Concellation & Returns</td>
+                <td>Twitter</td>
+            </tr>
+            <tr id="tr4">
+                <td>Careers</td>
+                <td>Terms Of Use</td>
+                <td>Security</td>
+                <td>YouTube</td>
+            </tr>
+            <tr id="tr5">
+                <td>Stories</td>
+                <td>FAQ</td>
+                <td>Privacy</td>
+            </tr>
+        </table>
+        <br><br>
+        <hr>
+        <footer>
+            <p>Copyright © 2020.ALL Rights Reseved.</p>
+            <br>
+            <img src="images/icons8-facebook-30.png">
+            <img src="images/icons8-instagram-30.png">
+            <img src="images/icons8-play-button-30.png">
+            <img src="images/icons8-twitter-30.png">
+            <br>
+
+        </footer>
+
+</body>
+</html>
